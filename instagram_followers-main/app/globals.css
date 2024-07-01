@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.landing-card {
+  background: #fff;
+  box-shadow: 1px 1px 22px 10px rgb(14 18 59 / 5%);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.card-wrapper {
+  box-shadow: 0 0.6032302072222955px 3.0161510361114776px -1.25px #0000000a,
+    0 2.290210571630906px 11.45105285815453px -2.5px #00000008,
+    0 10px 50px -3.75px #00000003;
+  border-radius: 24px;
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  align-items: center;
+  align-self: start;
+  background-color: #fff3;
+  width: 100%;
+}
+.zap-button {
+  background: rgb(8, 24, 90);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 24, 90, 1) 0%,
+    rgba(184, 23, 195, 1) 54%,
+    rgba(255, 0, 9, 0.7443957382373596) 100%
+  );
+}
+.icon-box {
+  background: rgb(255, 0, 105);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 105, 1) 0%,
+    rgba(255, 121, 0, 1) 100%
+  );
+}
+
