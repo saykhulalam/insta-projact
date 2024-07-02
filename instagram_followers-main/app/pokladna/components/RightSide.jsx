@@ -14,8 +14,13 @@ const RightSide = () => {
       <h2 className="text-[24px] font-extrabold text-[#292929] mb-[24px] ">
         Shrnutí objednávky
       </h2>
-      <UserBord imageUrl={userImage} appicon={<CiInstagram />} />
       <UserBord
+        userName="@jey_username"
+        imageUrl={userImage}
+        appicon={<CiInstagram />}
+      />
+      <UserBord
+        userName="@jey_username"
         imageUrl={userImage}
         appicon={<FaTiktok />}
         className="bg-black"

@@ -80,7 +80,7 @@ const LeftSide = () => {
           </div>
           <div>
             <input
-              className="w-[14px] h-[14px]"
+              className=" custom-radio w-[14px] h-[14px] appearance-none border-[2px] border-black rounded-full checked:bg-white  checked:border-[1px]"
               type="radio"
               checked={selectedOption === "applePay"}
               readOnly
@@ -105,7 +105,7 @@ const LeftSide = () => {
           </div>
           <div>
             <input
-              className="w-[14px] h-[14px]"
+              className=" custom-radio w-[14px] h-[14px] appearance-none border-[2px] border-black rounded-full checked:bg-white  checked:border-[1px]"
               type="radio"
               checked={selectedOption === "googlePay"}
               readOnly
@@ -128,7 +128,7 @@ const LeftSide = () => {
           </div>
           <div>
             <input
-              className="w-[14px] h-[14px]"
+              className=" custom-radio w-[14px] h-[14px] appearance-none border-[2px] border-black rounded-full checked:bg-white  checked:border-[1px]"
               type="radio"
               checked={selectedOption === "card"}
               readOnly

@@ -44,4 +44,24 @@ body {
     rgba(255, 121, 0, 1) 100%
   );
 }
+/* radio button */
+.custom-radio {
+  appearance: none;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+}
 
+.custom-radio:checked::after {
+  content: "";
+  display: inline-block;
+  width: 60%;
+  height: 60%;
+  background: #ed2e99;
+  border-radius: 50%;
+  position: absolute;
+  top: 22%;
+  left: 20%;
+}
+/* radio button */
