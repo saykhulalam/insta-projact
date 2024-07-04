@@ -80,7 +80,7 @@ const LeftSide = () => {
           </div>
           <div>
             <input
-              className=" custom-radio w-[14px] h-[14px] appearance-none border-[2px] border-black rounded-full checked:bg-white  checked:border-[1px]"
+              className=" w-[14px] h-[14px] appearance-none border-[1px] border-black rounded-full  checked:border-[2px] checked:bg-[#D60FF2] checked:border-white checked:outline checked:outline-[#F45937] checked:outline-2"
               type="radio"
               checked={selectedOption === "applePay"}
               readOnly
@@ -105,7 +105,7 @@ const LeftSide = () => {
           </div>
           <div>
             <input
-              className=" custom-radio w-[14px] h-[14px] appearance-none border-[2px] border-black rounded-full checked:bg-white  checked:border-[1px]"
+              className=" w-[14px] h-[14px] appearance-none border-[1px] border-black rounded-full  checked:border-[2px] checked:bg-[#D60FF2] checked:border-white checked:outline checked:outline-[#F45937] checked:outline-2"
               type="radio"
               checked={selectedOption === "googlePay"}
               readOnly
@@ -128,7 +128,7 @@ const LeftSide = () => {
           </div>
           <div>
             <input
-              className=" custom-radio w-[14px] h-[14px] appearance-none border-[2px] border-black rounded-full checked:bg-white  checked:border-[1px]"
+              className=" w-[14px] h-[14px] appearance-none border-[1px] border-black rounded-full  checked:border-[2px] checked:bg-[#D60FF2] checked:border-white checked:outline checked:outline-[#F45937] checked:outline-2"
               type="radio"
               checked={selectedOption === "card"}
               readOnly
