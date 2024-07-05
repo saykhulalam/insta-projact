@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import payImgOne from "../../../public/apple.png";
-import payImgtow from "../../../public/google.png";
 import payImgthree from "../../../public/stripe.png";
 import lockImg from "../../../public/lock.png";
 import tikkImg from "../../../public/tikk.png";
 import { FaChevronDown } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const LeftSide = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -49,7 +49,7 @@ const LeftSide = () => {
             id="default-checkbox"
             type="checkbox"
             defaultValue=""
-            className="w-4 h-4 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+            className="w-4 h-4 border-gray-300"
           />
           <label
             htmlFor="default-checkbox"
@@ -71,8 +71,9 @@ const LeftSide = () => {
           onClick={() => handleOptionClick("applePay")}
         >
           <div className="flex items-center gap-[8px]">
-            <div className="w-[45px] h-[20px] rounded-[6px] border-gray border-[1px] flex items-center justify-center">
-              <Image alt="apple-pay" src={payImgOne} />
+            <div className="w-[45px] h-[20px] rounded-[6px] border-gray border-[1px] flex items-center justify-center gap-[2px]">
+              <FaApple className="text-[16px]" />
+              <h5 className="text-[11px] font-semibold">Pay</h5>
             </div>
             <h5 className="text-[16px] font-normal text-[#292929]">
               Apple Pay
@@ -96,8 +97,9 @@ const LeftSide = () => {
           onClick={() => handleOptionClick("googlePay")}
         >
           <div className="flex items-center gap-[8px]">
-            <div className="w-[45px] h-[20px] rounded-[6px] border-gray border-[1px] flex items-center justify-center">
-              <Image alt="google-pay" src={payImgtow} />
+            <div className="w-[45px] h-[20px] rounded-[6px] border-gray border-[1px] flex items-center justify-center gap-[2px]">
+              <FcGoogle className="text-[16px]" />
+              <h5 className="text-[11px] font-semibold">Pay</h5>
             </div>
             <h5 className="text-[16px] font-normal text-[#292929]">
               Google Pay
@@ -119,8 +121,8 @@ const LeftSide = () => {
           onClick={() => handleOptionClick("card")}
         >
           <div className="flex items-center gap-[8px]">
-            <div className="w-[45px] h-[20px] rounded-[6px] border-gray border-[1px] flex items-center justify-center">
-              <Image alt="stripe" src={payImgthree} />
+            <div className="w-[45px] h-[20px] rounded-[6px] border-gray border-[1px] flex items-center justify-center text-[12px] font-bold">
+              stripe
             </div>
             <h5 className="text-[16px] font-normal text-[#292929]">
               Platba kartou
