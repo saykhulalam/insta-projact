@@ -40,12 +40,14 @@ const RightSide = ({ promptClassname }) => {
       <div>
         <Item
           imageUrl={itemImage}
+          name="Přidejte"
           prize="250 lajků"
           offerprize="79 Kč"
           crossprize="119 Kč"
         />
         <Item
           imageUrl={itemImage}
+          name="Přidejte"
           prize="250 lajků"
           offerprize="79 Kč"
           crossprize="119 Kč"
