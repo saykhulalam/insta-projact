@@ -7,10 +7,13 @@ import userImage from "../../../public/userFrofile.png";
 import Item from "../components/Item";
 import itemImage from "../../../public/itemImage.png";
 import Image from "next/image";
+import { prompt } from "@/app/layout";
 
-const RightSide = () => {
+const RightSide = ({ promptClassname }) => {
   return (
-    <div className="xl:w-[407px] xl:h-[850px] h-[880px] px-[16px] shadow-lg rounded-[10px] relative bg-[#F5F5F5] pt-[16px]">
+    <div
+      className={`xl:w-[407px] xl:h-[850px] h-[880px] px-[16px] shadow-lg rounded-[10px] relative bg-[#F5F5F5] pt-[16px] ${promptClassname}`}
+    >
       <h2 className="text-[24px] font-extrabold text-[#292929] mb-[24px] ">
         Shrnutí objednávky
       </h2>

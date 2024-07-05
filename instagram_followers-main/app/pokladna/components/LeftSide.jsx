@@ -1,14 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import payImgthree from "../../../public/stripe.png";
 import lockImg from "../../../public/lock.png";
 import tikkImg from "../../../public/tikk.png";
 import { FaChevronDown } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 
-const LeftSide = () => {
+const LeftSide = ({ promptClassname }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleOptionClick = (option) => {
@@ -16,7 +15,7 @@ const LeftSide = () => {
   };
 
   return (
-    <div className="xl:w-[700px">
+    <div className={`xl:w-[700px ${promptClassname}`}>
       <h2 className="text-[24px] font-extrabold text-[#292929] leading-[38px] mb-[16px]">
         Pokladna
       </h2>
